@@ -19,19 +19,21 @@ class Inventory:
     def add(self, add_amount):
         self.i_amount += add_amount
 
-    def update(self):
-        mylist2.append(self.i_amount)
+    #def update(self):
+     #   mylist2.append(self.i_amount)
         #for i in range(0, len(inventory_amount)):
         #    mylist2.append(self.i_amount[i])
 
 for i in range(0,len(inventory_name)):
     globals()[inventory_name[i]]=Inventory(inventory_code[i],inventory_amount[i],inventory_unit[i],inventory_location[i])
 
-mylist2=[]
+
 
 folyo.info()
 folyo.add(999999)
-folyo.update()
+#folyo.update()
 folyo.info()
+
+mylist2=[Inventory(i_amount)]
 
 print(mylist2)
